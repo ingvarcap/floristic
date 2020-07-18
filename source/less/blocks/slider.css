@@ -1,0 +1,67 @@
+/*лента слайдов*/
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+/*ограничивающая оболочка*/
+.slick-list {
+  overflow: hidden;
+}
+.catalog__list .slick-arrow {
+  margin: -80px 0 0 0;
+  position: absolute;
+  width: 30px;
+  height: 50px;
+  font-size: 0;
+  top: 50%;
+  z-index: 10;
+  background-size: 100%;
+  border: none;
+}
+.catalog__list .slick-arrow.slick-disabled {
+  opacity: 0.3;
+}
+.catalog__list .slick-arrow.slick-prev {
+  left: 0;
+  background: url("../img/sl-arrow_l.svg") 0 0 no-repeat;
+}
+.catalog__list .slick-arrow.slick-next {
+  right: -22px;
+  background: url("../img/sl-arrow_r.svg") 0 0 no-repeat;
+}
+.catalog__list .slick-dots {
+  margin: 20px auto 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 288px;
+}
+.catalog__list .slick-dots li {
+  list-style: none;
+}
+.catalog__list .slick-dots button {
+  margin-right: 10px;
+  width: 62px;
+  height: 3px;
+  font-size: 0;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  cursor: pointer;
+}
+.catalog__list .slick-dots button:last-child {
+  margin-right: 0;
+}
+.catalog__list .slick-dots li.slick-active button {
+  background: #ffffff;
+}
+@media (min-width: 768px) {
+  .catalog__list .slick-dots {
+    width: 635px;
+  }
+}
+@media (min-width: 1920px) {
+  .catalog__list .slick-dots {
+    display: none;
+  }
+}
