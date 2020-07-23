@@ -1392,5 +1392,103 @@ input[placeholder] {
   color: #010001;
   border: none;
 }
+.category__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.category__img {
+  margin-bottom: 30px;
+}
+.category__header {
+  margin: 0 0 30px 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.category__article {
+  margin: 0 0 30px 0;
+  padding: 0;
+  text-align: left;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 100;
+  text-transform: none;
+  letter-spacing: 0.02em;
+}
+.category__btn-order {
+  margin: 0 0 50px 0;
+  padding: 16px 30px 14px 30px;
+  background-color: #3B181E;
+  font-size: 10px;
+  line-height: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.category__slider-list.slick-slider {
+  margin: 0 0 45px 0;
+  padding: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 320px;
+  overflow: hidden;
+}
+.category__slider-link {
+  margin: 0 15px;
+  display: block;
+  width: 75px;
+  min-height: 75px;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  cursor: pointer;
+}
+.category__slider-link--01 {
+  background-image: url("../img/category-bg-link-1.jpg");
+}
+.category__slider-link--02 {
+  background-image: url("../img/category-bg-link-2.jpg");
+}
+.category__slider-link--03 {
+  background-image: url("../img/category-bg-link-3.jpg");
+}
+.category__slider-list .slick-arrow {
+  margin: 0;
+  position: absolute;
+  width: 30px;
+  height: 50px;
+  font-size: 0;
+  top: 50%;
+  z-index: 10;
+  background-size: 100%;
+  border: none;
+}
+.category__slider-list .slick-arrow.slick-disabled {
+  opacity: 0.3;
+}
+.category__slider-list .slick-arrow.slick-prev {
+  left: 0;
+  background: url("../img/sl-arrow_l.svg") 0 0 no-repeat;
+}
+.category__slider-list .slick-arrow.slick-next {
+  right: -22px;
+  background: url("../img/sl-arrow_r.svg") 0 0 no-repeat;
+}
 
 /*# sourceMappingURL=style.css.map */

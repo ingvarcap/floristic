@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Catalog_Floristic</title>
+</head>
+
+<body>
+  <main>
+    <div class="header">
+      <div class="header__wrapper">
+        <div class="menu-wrapper container">
+          <a href="index.html" class="menu__logo-link"></a>
+          <button class="menu__toggle menu__toggle--opened">меню</button>
+        </div>
+        <nav class="menu__nav menu__nav--opened menu__nav--nojs">
+          <ul class="menu__nav-list">
+            <li class="menu__nav-item">
+              <a class="menu__nav-link menu__nav-link--active" href=" #">свадебная флористика</a>
+            </li>
+            <li class="menu__nav-item">
+              <a class="menu__nav-link" href="#">букеты на любые мероприятия</a>
+            </li>
+            <li class="menu__nav-item">
+              <a class="menu__nav-link" href="#">букеты невесты</a>
+            </li>
+            <li class="menu__nav-item">
+              <a class="menu__nav-link" href="#">композиции</a>
+            </li>
+            <li class="menu__nav-item">
+              <a class="menu__nav-link" href="#">оформление мероприятий</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <section class="category">
+      <img src="img/category-1.png" alt="Букет на мероприятия" class="category__img">
+      <div class="category__wrapper  container">
+        <h2 class="category__header">Букеты на мероприятия</h2>
+        <article class="category__article">
+          У нас есть огромное разноообразие букетов на любое событие.
+          Вы сможете приобрести как нежный букет, так и яркий, а также мужские, круглые, вертикалье, веерообразные,
+          букеты-зонтики, букеты в вегетативной технике и много других экзотических видов.
+        </article>
+        <button class="category__btn-order">Заказать</button>
+        <div class="category__slider">
+          <ul class="category__slider-list">
+            <li class="category__slider-item"><a class="
+               category__slider-link--01" href="#"></a>
+            </li>
+            <li class="category__slider-item"><a class="category__slider-link category__slider-link--02" href="#"></a>
+            </li>
+            <li class="category__slider-item"><a class="category__slider-link category__slider-link--03" href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer container">
+    <ul class="footer__nav-list">
+      <li class="footer__nav-item">
+        <a class="footer__nav-link" href=" #">Свадебная флористика</a>
+      </li>
+      <li class="footer__nav-item">
+        <a class="footer__nav-link" href="#">Букеты на любые мероприятия</a>
+      </li>
+      <li class="footer__nav-item">
+        <a class="footer__nav-link" href="#">Букеты невесты</a>
+      </li>
+      <li class="footer__nav-item">
+        <a class="footer__nav-link" href="#">Композиции</a>
+      </li>
+      <li class="footer__nav-item">
+        <a class="footer__nav-link" href="#">Оформление мероприятий</a>
+      </li>
+    </ul>
+    <ul class="social-list">
+      <li class="social-list__item"><a href="#" class="social-list__link social-list__link--inst"></a></li>
+      <li class="social-list__item"><a href="#" class="social-list__link social-list__link--fb"></a></li>
+      <li class="social-list__item"><a href="#" class="social-list__link social-list__link--tel"></a></li>
+      <li class="social-list__item"><a href="#" class="social-list__link social-list__link--vk"></a></li>
+    </ul>
+  </footer>
+  <section id="popup" class="popup container">
+    <div class="popup__wrapper">
+      <div class="popup__wrapper-button">
+        <a href="#" class="popup__link-close"></a>
+      </div>
+      <span class="popup__text">Оставьте свой
+        номер и мы вам
+        перезвоним!
+      </span>
+      <form action="" class="popup__form" method="POST">
+        <input type="text" class="popup__input popup__form-name" placeholder="Имя" required>
+        <input type="tel" class="popup__input popup__form-tel" placeholder="Телефон" required>
+        <button class="popup__form-btn">позвоните мне</button>
+      </form>
+    </div>
+  </section>
+  <script type="text/javascript" src="js/menu-toggle.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script type="text/javascript" src="js/category-slider.js"></script>
+</body>
+
+</html>
