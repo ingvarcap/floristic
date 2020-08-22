@@ -1,11 +1,20 @@
+.category__photo {
+  margin-bottom: 30px;
+  height: 443px;
+  background-image: url("../img/category-1.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.category__gallery {
+  display: none;
+}
+
 .category__wrapper {
   display: flex;
   flex-direction: column;
   align-items: start;
-}
-
-.category__img {
-  margin-bottom: 30px;
 }
 
 .category__header {
@@ -38,4 +47,89 @@
   text-transform: uppercase;
   color: #ffffff;
   border: 1px solid #ffffff;
+}
+
+@media(min-width: 768px) {
+  .category__photo {
+    background-image: url("../img/category-1-tablet.png");
+  }
+
+  .category__gallery {
+    display: block;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .category__gallery-list {
+    margin: 0 0 70px 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .category__slider {
+    display: none;
+  }
+
+  .category__header {
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: 0.09em;
+  }
+
+  .category__article {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .category__btn-order {
+    font-size: 15px;
+    line-height: 17px;
+    padding: 20px 40px;
+  }
+}
+
+@media(min-width: 1920px) {
+  .category {
+    display: flex;
+  }
+
+  .category__gallery {
+    display: none;
+  }
+
+  .category__slider {
+    display: block;
+  }
+
+  .category__photo {
+    margin-right: 114px;
+    width: 1086px;
+    height: 1086px;
+    background-image: url("../img/category-1-desktop.jpg");
+  }
+
+  .category__wrapper {
+    padding-top: 250px;
+  }
+
+  .category__header {
+    margin-bottom: 50px;
+    width: 365px;
+    font-size: 50px;
+    line-height: 55px;
+  }
+
+  .category__article {
+    width: 545px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .category__btn-order {
+    margin-bottom: 50px;
+    font-size: 12px;
+    line-height: 13px;
+  }
 }

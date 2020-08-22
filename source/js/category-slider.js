@@ -34,7 +34,7 @@ $(document).ready(function () {
       {
         breakpoint: 1730,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
         },
       },
     ], //количество слайдов на различных разрешениях экрана, также можно применять все вышенаписанные свойства

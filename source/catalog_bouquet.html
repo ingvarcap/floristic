@@ -15,7 +15,7 @@
 <body>
   <main>
     <div class="header">
-      <div class="header__wrapper">
+      <div class="header__wrapper header__wrapper-bouquet">
         <div class="menu-wrapper container">
           <a href="index.html" class="menu__logo-link"></a>
           <button class="menu__toggle menu__toggle--opened">меню</button>
@@ -42,7 +42,19 @@
       </div>
     </div>
     <section class="category">
-      <img src="img/category-1.png" alt="Букет на мероприятия" class="category__img">
+      <div class="category__photo"></div>
+      <div class="category__gallery container">
+        <ul class="category__gallery-list">
+          <li class="category__gallery-item"><img src="../img/bouquet-1.png" alt="Букет-1"
+              class="category__gallery-image"></li>
+          <li class="category__gallery-item"><img src="../img/bouquet-2.png" alt="Букет-2"
+              class="category__gallery-image"></li>
+          <li class="category__gallery-item"><img src="../img/bouquet-3.png" alt="Букет-3"
+              class="category__gallery-image"></li>
+          <li class="category__gallery-item"><img src="../img/bouquet-4.png" alt="Букет-4"
+              class="category__gallery-image"></li>
+        </ul>
+      </div>
       <div class="category__wrapper  container">
         <h2 class="category__header">Букеты на мероприятия</h2>
         <article class="category__article">
@@ -53,12 +65,14 @@
         <button class="category__btn-order">Заказать</button>
         <div class="category__slider">
           <ul class="category__slider-list">
-            <li class="category__slider-item"><a class="
+            <li class="category__slider-item"><a class="category__slider-link
                category__slider-link--01" href="#"></a>
             </li>
             <li class="category__slider-item"><a class="category__slider-link category__slider-link--02" href="#"></a>
             </li>
             <li class="category__slider-item"><a class="category__slider-link category__slider-link--03" href="#"></a>
+            </li>
+            <li class="category__slider-item"><a class="category__slider-link category__slider-link--04" href="#"></a>
             </li>
           </ul>
         </div>

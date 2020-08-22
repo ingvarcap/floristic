@@ -1,20 +1,32 @@
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+
+/*ограничивающая оболочка*/
+.slick-list {
+  overflow: hidden;
+}
+
 .category__slider-list.slick-slider {
   margin: 0 0 45px 0;
   padding: 0;
   position: relative;
   display: flex;
   align-items: center;
+}
+
+.category__slider-list {
   width: 320px;
-  overflow: hidden;
 }
 
 .category__slider-link {
-  margin: 0 15px;
   display: block;
   width: 75px;
   min-height: 75px;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   color: #ffffff;
   cursor: pointer;
 
@@ -29,15 +41,19 @@
   &--03 {
     background-image: url("../img/category-bg-link-3.jpg");
   }
+
+  &--04 {
+    background-image: url("../img/category-bg-link-4.jpg");
+  }
 }
 
 .category__slider-list .slick-arrow {
   margin: 0;
   position: absolute;
-  width: 30px;
-  height: 50px;
+  width: 10px;
+  height: 25px;
   font-size: 0;
-  top: 50%;
+  top: 120%;
   z-index: 10;
   background-size: 100%;
   border: none;
@@ -48,11 +64,51 @@
 }
 
 .category__slider-list .slick-arrow.slick-prev {
-  left: 0;
+  left: 82px;
   background: url("../img/sl-arrow_l.svg") 0 0 no-repeat;
 }
 
 .category__slider-list .slick-arrow.slick-next {
-  right: -22px;
+  left: 193px;
   background: url("../img/sl-arrow_r.svg") 0 0 no-repeat;
+}
+
+@media(min-width: 1920px) {
+  .category__slider-link {
+    margin-right: 20px;
+    width: 123px;
+    height: 123px;
+
+    &--04 {
+      margin: 0;
+    }
+  }
+
+  .category__slider-list {
+    width: 605px;
+  }
+
+  .category__slider-list.slick-slider {
+    margin: 0;
+  }
+
+  .category__slider-list .slick-arrow.slick-prev {
+    z-index: -1;
+  }
+
+  .category__slider-list .slick-arrow.slick-next {
+    top: 33%;
+    left: 505px;
+    width: 45px;
+    height: 45px;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+    background: url("../img/sl-arrow_r.svg") center center no-repeat;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+  }
+
+  .footer__nav-item {
+    margin-bottom: 0;
+  }
 }
